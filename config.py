@@ -1,4 +1,8 @@
+import os
 from configparser import ConfigParser
+
+ROOT_DIR = os.path.dirname(__file__)
+EMPLOYERS_FILE_PATH = os.path.join(ROOT_DIR, 'data', 'employers.txt')
 
 
 def config(filename="database.ini", section="postgresql"):
